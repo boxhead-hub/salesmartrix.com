@@ -1,0 +1,75 @@
+/* General Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: #fff;
+    margin: 0;
+}
+
+header {
+    background: #1a73e8;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+header nav a:hover {
+    color: #ffdd00;
+    text-shadow: 0 0 5px #ffdd00;
+}
+
+.contact-container {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+    animation: fadeIn 1s ease;
+}
+
+.contact-card {
+    background: #222;
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #1a73e8;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px #ff4444;
+}
+
+h1, h2 {
+    margin: 10px 0;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    color: #888;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(50px);}
+    to { opacity: 1; transform: translateY(0);}
+}

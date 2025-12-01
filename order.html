@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta-name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Order</title>
+
+    <link rel="stylesheet" href="css/order.css">
+    <!-- Firebase App -->
+<script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js"></script>
+
+<!-- Firestore -->
+<script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore.js"></script>
+
+<!-- EmailJS (for notifications) -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="module" src="order.js"></script>
+
+    <script defer src="order.js"></script>
+</head>
+
+<body>
+
+<div class="order-container">
+
+    <h1 class="order-title">Place Your Order</h1>
+
+    <form id="orderForm">
+
+        <label>Full Name</label>
+        <input type="text" id="name" required>
+
+        <label>Email</label>
+        <input type="email" id="email" required>
+
+        <label>Phone Number</label>
+        <input type="text" id="phone" required>
+
+        <label>Product Name</label>
+        <input type="text" id="product" required>
+
+        <label>Quantity</label>
+        <input type="number" id="qty" min="1" value="1">
+
+        <label>Address</label>
+        <textarea id="address" required></textarea>
+
+        <button type="submit" class="submit-btn">Submit Order</button>
+
+    </form>
+
+    <p id="status"></p>
+
+</div>
+
+<script src="/json/order.json"></script>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-app.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyDw_zvevFCdSrJlK-MY2Wps8CLhGDjF6BU",
+    authDomain: "salesmartix.firebaseapp.com",
+    projectId: "salesmartix",
+    storageBucket: "salesmartix.firebasestorage.app",
+    messagingSenderId: "475232693316",
+    appId: "1:475232693316:web:67c94dba91a1480cc02011"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+</script>
+</body>
+</html>

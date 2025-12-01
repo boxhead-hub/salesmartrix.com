@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Verify Account - SalesMartix</title>
+<link rel="stylesheet" href="css/verify.css">
+
+<!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore.js"></script>
+
+<!-- EmailJS for sending verification -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="module" src="/js/verify.js"></script>
+</head>
+<body>
+<div class="verify-container">
+    <h1>Verify Your Account</h1>
+    <p>Enter the code sent to your email</p>
+    <form id="verifyForm">
+        <input type="text" id="codeInput" placeholder="Enter verification code" required>
+        <button type="submit">Verify</button>
+    </form>
+    <p id="status"></p>
+</div>
+</body>
+</html>

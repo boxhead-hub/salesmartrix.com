@@ -1,0 +1,10 @@
+{
+  "orders": [],
+  "settings": {
+    "version": "2.0",
+    "autoSave": true,
+    "firebase": true,
+    "allowTracking": true,
+    "allowAdmin": true
+  }
+}

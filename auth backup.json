@@ -1,0 +1,9 @@
+{
+  "users": [],
+  "settings": {
+    "firebase": true,
+    "allowLogin": true,
+    "allowSignup": true,
+    "redirectAfterLogin": "home.html"
+  }
+}
